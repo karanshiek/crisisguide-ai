@@ -1,0 +1,6 @@
+{
+  "name": "Disaster Emergency Guidance & Support AI",
+  "description": "An intelligent disaster response and emergency preparedness assistant providing life-saving instructions, real-time alerts, hazard vision, SOS, first-aid, and family safety plans.",
+  "requestFramePermissions": ["geolocation", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

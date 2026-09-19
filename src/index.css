@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-200;
+  }
+}
+
+/* Custom Scrollbar for Chat and Content */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Accessibility: High Contrast overrides */
+.high-contrast {
+  --tw-border-opacity: 1 !important;
+  border-color: #000000 !important;
+  color: #000000 !important;
+}
+
+.dark .high-contrast {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Emergency pulse animation */
+@keyframes emergency-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 16px rgba(239, 68, 68, 0);
+  }
+}
+
+.animate-emergency-pulse {
+  animation: emergency-pulse 2s infinite;
+}
